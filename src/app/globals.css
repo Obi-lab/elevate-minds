@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body{
+  
+  color:#363636;
+}
+
+body{
+  font-family: Roboto;  
+  font-size: 16px; 
+  font-weight: 400; 
+  color: #363636; 
+      
+}
+
+
+.container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.side {
+  padding: 0%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transform: skew(-22deg);
+  transition: all 500ms;
+  overflow: hidden;
+}
+
+
+.side:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: inherit;
+  transform: skew(22deg);
+}
+
+#one {
+  background-color: #008AD1;
+  margin-left: -10%;
+  width: 75%;
+}
+
+#two {
+  background-color: #FDCA05;
+  margin-right: -10%;
+  width: 60%;
+}
+
+.side p {
+  transform: skew(22deg);
+  margin: 0;
+}
+
+.side:hover {
+  cursor: pointer;
+}
+
+.footerBackgroundImage {
+  background-image: url('../../public/footer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.homeContactBackgroundImage {
+  background-image: url('../../public/homeContact.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.homeTopBackgroundImage {
+  background-image: url('../../public/top.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aboutMidBackgroundImage {
+  background-image: url('../../public/aboutMid.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.careersBackgroundImage {
+  background-image: url('../../public/careers.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(0px);
+  z-index: -1;
+}
+
+.topElement{
+  filter: blur(0px);
+  z-index: 5;
+}
+
+
+
+.flow{
+  position: absolute;
+  width: auto; /* Adjust to your image width if necessary */
+  animation: moveLeft 8s linear infinite;
+}
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%); /* Start from right outside the container */
+  }
+  50% {
+    transform: translateX(0); /* Move to the original position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left outside the container */
+  }
+}
+
+.skewed-line {
+  position: relative;
+  width: 1px; /* Width of the line */
+  height: 15px; /* Height of the line */
+  background-color: red; /* Color of the line */
+  transform: skew(-22deg);
+  
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
