@@ -18,9 +18,9 @@ const NewsletterSubscriptionForm: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center text-white  py-2 w-[100%] bg-red-600">
+    <div className="flex flex-col items-center justify-center text-white md:py-2  py-4 w-[100%] bg-red-600">
       
-      <form onSubmit={handleSubmit} className="w-[100%] flex flex-row p-16  justify-between">
+      <form onSubmit={handleSubmit} className="w-[100%] flex md:flex-row md:py-10 flex-col md:px-20 px-10  justify-between">
       <h2 className="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
         <div className="mb-4">
         
@@ -36,8 +36,8 @@ const NewsletterSubscriptionForm: React.FC = () => {
         </div>
         <button
           type="submit"
-          className=" bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600"
-        >
+          className=" bg-blue-600 text-white py-1 px-6 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          >
           Subscribe
         </button>
       </form>

@@ -3,13 +3,22 @@ import Layout from "@/components/Layout"
 import Link from "next/link";
 import WorldImage from '../../public/wolrd.png'
 import { PlusIcon } from "@heroicons/react/24/outline";
+import Capacity from "../../public/capacity.png" 
+import Climate from "../../public/climate.jpg"
+import Electric from "../../public/electric.jpg"
+import EnergyAudit from "../../public/energyAudit.jpg"
+import Environment from "../../public/environment.jpg"
+import Waste from "../../public/waste.jpg"
+import Slider from "@/components/Slider";
 
 export default function Home() {
   return (
     <Layout>
       <div className="flex flex-col gap-32">
-        <div className="homeTopBackgroundImage  h-[86vh] flex items-center">
 
+
+        <div className="homeTopBackgroundImage  h-[86vh] flex items-center ">
+          <Slider/>
         </div>
 
 

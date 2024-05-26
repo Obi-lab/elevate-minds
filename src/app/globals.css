@@ -114,9 +114,51 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(0px);
-  z-index: -1;
 }
+
+.capacityBackgroundImage {
+  background-image: url('../../public/capacity.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} 
+
+.energyBackgroundImage {
+  background-image: url('../../public/energyAudit.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.climateBackgroundImage {
+  background-image: url('../../public/climate.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wasteBackgroundImage {
+  background-image: url('../../public/waste.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.envBackgroundImage {
+  background-image: url('../../public/environment.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.electricBackgroundImage {
+  background-image: url('../../public/electric.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 
 .topElement{
   filter: blur(0px);

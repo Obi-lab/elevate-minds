@@ -19,7 +19,7 @@ export default function Navbar() {
   const isActive = (path: string): boolean => pathname === path;
 
   return (
-    <div className="bg-black w-full ">
+    <div className="bg-black w-full sticky top-0 z-50 ">
       <div className="flex flex-col w-[100%] bg-white ">
 
         <div className=" flex flex-row text-white justify-between  bg-gray-800 w-[100vw] overflow-hidden">
@@ -78,15 +78,14 @@ export default function Navbar() {
           </div>
 
         </div>
-        <div className="sticky top-0 ">hhh</div>
-
-        <div className="z-50 py-10 px-20 flex md:flex-row gap-8  items-center shadow-bottom-only justify-between ">
+        
+        <div className=" py-10 md:px-20 px-10 flex md:flex-row gap-8  items-center shadow-bottom-only justify-between ">
           <div className="">
             <p>Elevate Minds</p>
 
           </div>
           <div className={`md:static md:min-h-fit absolute md:w-auto w-full min-h-[60vh] flex flex-col gap-8
-             left-0 md:block  ${menuOpen ? 'block  z-50 bg-white top-0 py-3 h-[100vh]' : 'hidden items-center'} 
+             left-0 md:block  ${menuOpen ? 'block  z-100 bg-white top-0 py-3 h-[100vh]' : 'hidden items-center'} 
                rounded   px-5 transition-all duration-700`}>
             <div className="flex justify-end p-4 md:hidden">
               <div className="flex flex-col gap-2" onClick={toggleMenu}>
@@ -142,9 +141,7 @@ export default function Navbar() {
                     <Link className="block px-2 py-2  hover:text-red-600" href="/services/waste-management-consulting">
                       Waste Management and Consulting
                     </Link>
-                    <Link className="block px-2 py-2  hover:text-red-600" href="/services/corporate-and-environmanetal-sustainability">
-                      Corporate and Environmental Sustainability Training
-                    </Link>
+                    
                     <Link className="block px-2 py-2  hover:text-red-600" href="/services/environmental-management-services">
                       Environmental and Management Services
                     </Link>
